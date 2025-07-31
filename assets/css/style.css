@@ -1856,15 +1856,7 @@ input[type=time]::-webkit-calendar-picker-indicator{
     color:var(--title-color);
     padding-left:18px
 }
-.th-mobile-menu ul li a:before{
-    content:"";
-    font-family:var(--icon-font);
-    position:absolute;
-    left:0;
-    top:12px;
-    margin-right:10px;
-    display:inline-block
-}
+
 .th-mobile-menu ul li.th-active>a{
     color:var(--theme-color)
 }
@@ -21150,24 +21142,25 @@ span.select2-selection.select2-selection--single:focus{
 .gallery-card.style3 .box-img:before{
     display:none
 }
-.gallery-card.style3 .box-content{
-    position:absolute;
-    -webkit-transition:.4s ease-in-out;
-    transition:.4s ease-in-out;
-    visibility:hidden;
-    opacity:0;
-    z-index:3;
-    left:30px;
-    bottom:0px;
-    right:30px;
-    top:auto;
-    background:rgba(0,0,0,0);
-    width:auto;
-    -webkit-transform:none;
-    transform:none;
-    text-align:start;
-    padding:30px 90px 30px 30px
+.gallery-card.style3 .box-content {
+    position: absolute;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    visibility: visible;        /* Make it visible */
+    opacity: 1;                 /* Fully visible */
+    z-index: 3;
+    left: 30px;
+    bottom: 0px;
+    right: 30px;
+    top: auto;
+    background: rgba(0, 0, 0, 0); /* transparent background */
+    width: auto;
+    -webkit-transform: none;
+    transform: none;
+    text-align: start;
+    padding: 30px 90px 30px 30px;
 }
+
 @media(max-width: 575px){
     .gallery-card.style3 .box-content{
         padding:25px 80px 25px 25px;
@@ -21179,7 +21172,8 @@ span.select2-selection.select2-selection--single:focus{
 .gallery-card.style3 .box-content .bg-shape{
     position:absolute;
     inset:0;
-    z-index:-1
+    z-index:-1;
+    margin-bottom:10px;
 }
 .gallery-card.style3 .box-content .bg-shape img{
     height:100%;
@@ -24169,5 +24163,167 @@ span.select2-selection.select2-selection--single:focus{
 .footer__thinb__styling:hover{
   color: white !important;
 }
-.service-card { min-height: 600px; display: flex; flex-direction: column; }
+.service-card { min-height: 430px; display: flex; flex-direction: column; }
 .box-content { flex-grow: 1; }
+
+/* Vision & Mission Section Styling */
+.vision-mission-area {
+    padding: 30px 0; /* Compact padding */
+    background: linear-gradient(135deg, #f0f4ff 0%, #e6e9ff 100%); /* Vibrant gradient */
+}
+
+.vision-mission-card {
+    background: #ffffff; /* White card */
+    border-radius: 6px; /* Sleek corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 12px; /* Minimal padding */
+    margin-bottom: 8px; /* Reduced spacing */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Fast hover */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #3E66F3, #684DF4); /* Gradient border */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.vision-mission-card:hover::before {
+    opacity: 1; /* Show gradient border on hover */
+}
+
+.vision-mission-card:hover {
+    transform: scale(1.03); /* Subtle scale-up */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.vision-mission-card .box-icon {
+    margin-bottom: 8px; /* Minimal icon spacing */
+}
+
+.vision-mission-card .box-icon i {
+    font-size: 2rem; /* Bold icon */
+    color: #d3d3d3; /* Light gray */
+    transition: color 0.2s ease, filter 0.2s ease;
+}
+
+.vision-mission-card:hover .box-icon i {
+    color: #3E66F3; /* Primary color */
+    filter: drop-shadow(0 0 5px rgba(62, 102, 243, 0.5)); /* Glow effect */
+}
+
+.vision-mission-card .box-title {
+    font-size: 16px; /* Compact title */
+    margin-bottom: 6px; /* Minimal spacing */
+    color: #323F7C; /* Dark color */
+}
+
+.vision-mission-card .box-text {
+  
+    color: #555;
+    margin-bottom: 8px; /* Minimal spacing */
+}
+
+.vision-mission-card .checklist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vision-mission-card .checklist ul li {
+    position: relative;
+    padding-left: 20px; /* Small bullet space */
+    margin-bottom: 5px; /* Minimal spacing */
+    font-size: 11px; /* Smaller text */
+    color: #555;
+}
+
+.vision-mission-card .checklist ul li::before {
+    content: '\f058'; /* Font Awesome check-circle */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #3E66F3;
+    font-size: 12px;
+}
+
+.vision-mission-area .call-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.vision-mission-area .call-icon i {
+    font-size: 14px; /* Compact icon */
+    color: #3E66F3;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.vision-mission-area .call-icon:hover i {
+    color: #684DF4; /* Secondary color */
+    transform: scale(1.1); /* Subtle pop */
+}
+
+.vision-mission-area .call-label {
+    font-size: 10px; /* Smaller label */
+    color: #555;
+}
+
+.vision-mission-area .call-link a {
+    font-size: 12px; /* Compact link */
+    color: #323F7C;
+    text-decoration: none;
+}
+
+.vision-mission-area .call-link a:hover {
+    color: #3E66F3;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .vision-mission-area {
+        padding: 20px 0; /* Smaller mobile padding */
+    }
+    .vision-mission-card {
+        padding: 10px; /* Minimal padding */
+    }
+    .vision-mission-card .box-title {
+        font-size: 14px; /* Smaller title */
+    }
+    .vision-mission-card .box-text {
+        font-size: 11px; /* Smaller text */
+    }
+    .vision-mission-card .box-icon i {
+        font-size: 1.8rem; /* Smaller icon */
+    }
+    .vision-mission-card .checklist ul li {
+        font-size: 10px; /* Smaller checklist */
+    }
+}
+
+.icon__stling{
+    margin-bottom: 50px;
+}
+.scioal__media_icon{
+    padding-bottom: 10px;
+}
+
+.facilities__main{
+        padding-top: 50px;
+}
+.falictis__main{
+    padding: 50px;
+    background-size: 100% calc(100% - 0px) !important;
+    
+}
+
