@@ -24148,6 +24148,8 @@ span.select2-selection.select2-selection--single:focus{
     padding: 0px;
     background-size: 100% calc(100% - 0px) !important;
 }
+
+
 }
 /* home styling  */
 
@@ -24159,6 +24161,9 @@ span.select2-selection.select2-selection--single:focus{
 }
 .space-bottom-pag{
     padding-bottom: 120px;
+}
+.space-bottom{
+    padding-bottom: 0px !important;
 }
 .footer__thinb__styling{
   color: #F96363 !important;
@@ -24188,3 +24193,94 @@ margin: auto !important;
     margin-top: 25px;
 }
 
+.details__img{
+    display: flex;
+}
+.why-choose-section {
+    padding: 0px 20px;
+}
+.section-title {
+
+  font-weight: bold;
+  margin-bottom: 30px;
+  
+}
+
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose-list li {
+  background-color: #fff;
+  border-left: 5px solid #007b5e;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.why-choose-list li:hover {
+  background-color: #eefaf6;
+  border-left-color: #005d44;
+}
+.cta-section {
+  background-color: #f4f9ff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 70, 140, 0.08);
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.cta-box {
+  padding: 20px;
+}
+
+.cta-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+.details__stylinpading{
+    padding: 50px 0px;
+}
+.details__stylinpading_butom{
+    padding: 0px!important;
+}
+
+.col-auto_detailsbtn{
+    width: 20%;
+    margin: auto;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Optional spacing */
+}
