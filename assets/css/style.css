@@ -24177,6 +24177,10 @@
  .facilities__main{
      padding-top: 50px;
 }
+.Facilities__mainn{
+    padding-top: 0px !important;
+}
+
  .about__image__styling{
      height: 70vh !important;
      margin: auto !important;
