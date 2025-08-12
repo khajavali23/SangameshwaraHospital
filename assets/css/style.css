@@ -6307,9 +6307,7 @@
  .header-layout1 .header-link:hover{
      color:var(--theme-color) 
 }
- .header-layout1 .th-btn{
-     padding:15.2px 24px 
-}
+
  @media(max-width: 1299px){
      .header-layout1 .th-btn{
          padding:15px 16px 
@@ -15523,12 +15521,13 @@
          display:none 
     }
 }
- .testi-card{
-     background-color:#fff2f2;
-     border-radius:24px;
-     position:relative;
-     padding:72px 30px 72px 72px;
-     z-index:2 
+ .testi-card {
+    background-color: #fff2f2;
+    border-radius: 24px;
+    position: relative;
+    padding: 40px 40px 40px 40px;
+    z-index: 2;
+    /* border-radius: 20px; */
 }
  @media(max-width: 1299px){
      .testi-card{
@@ -22251,6 +22250,7 @@
      max-width:190px;
      height:165px 
 }
+
  .body-particle{
      position:fixed;
      top:0;
@@ -24269,4 +24269,7 @@
      margin-top: 20px;
     /* Optional spacing */
 }
- 
+.gmia__wordbreak{
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
