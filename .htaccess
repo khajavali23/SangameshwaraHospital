@@ -1,0 +1,11 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Only rewrite if:
+#  - It's not a directory
+#  - A matching .html file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Internally rewrite /about to //about
+RewriteRule ^([^/]+?)/?$ $1.html [L]
