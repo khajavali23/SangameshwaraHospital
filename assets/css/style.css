@@ -223,6 +223,9 @@
      .h6,h6{
          font-size:16px 
     }
+     .icon__stling{
+     margin-bottom: 50px;
+}
 }
  @media(max-width: 575px){
      .h1,h1{
@@ -2091,6 +2094,9 @@
      transition:transform .4s ease, -webkit-transform .4s ease;
      z-index:-1 
 }
+.th-btn:hover {
+    color: #fff !important; /* change text color to white on hover */
+}
  .th-btn:after{
      --progress: -100%;
      background:-webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(25%, transparent), color-stop(0, var(--title-color)), color-stop(50%, var(--title-color)), color-stop(0, transparent), color-stop(75%, transparent), color-stop(0, var(--title-color)));
@@ -2100,6 +2106,7 @@
   color: #253C0D;
   -webkit-transition-delay: .4s;
   transition-delay: .4s;
+background-color: #253C0D;
 }
 
  .th-btn:hover:before,.th-btn:hover:after{
@@ -2116,9 +2123,8 @@
  .th-btn.style1:hover{
      color:var(--title-color) 
 }
- .th-btn.style2{
-     background-color:var(--title-color) 
-}
+
+
  .th-btn.style2:before,.th-btn.style2:after{
      background:-webkit-gradient(linear, left top, right top, color-stop(25%, var(--theme-color)), color-stop(0, transparent), color-stop(50%, transparent), color-stop(0, var(--theme-color)), color-stop(75%, var(--theme-color)), color-stop(0, transparent));
      background:linear-gradient(90deg, var(--theme-color) 25%, transparent 0, transparent 50%, var(--theme-color) 0, var(--theme-color) 75%, transparent 0) 
@@ -5557,12 +5563,7 @@
      background-color:rgba(0,0,0,0);
      color:var(--theme-color) 
 }
- .footer-widget.widget_meta a:hover:before,.footer-widget.widget_pages a:hover:before,.footer-widget.widget_archive a:hover:before,.footer-widget.widget_categories a:hover:before,.footer-widget.widget_nav_menu a:hover:before{
-     content:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.47399V9.52606C16 9.75581 15.8138 9.94225 15.5838 9.94225H9.94225V15.5838C9.94225 15.8139 9.75581 16 9.52606 16H6.47399C6.24437 16 6.05779 15.8138 6.05779 15.5838V9.94225H0.416193C0.186253 9.94225 0 9.75581 0 9.52606V6.47399C0 6.24419 0.186253 6.05779 0.416193 6.05779H6.05779V0.416193C6.05779 0.186162 6.24432 0 6.47399 0H9.52606C9.75581 0 9.94225 0.186162 9.94225 0.416193V6.05779H15.5838C15.8139 6.05779 16 6.24419 16 6.47399Z' fill='%23F96363'/%3E%3C/svg%3E%0A");
-     color:var(--theme-color);
-     -webkit-transition:all .9s ease-in-out;
-     transition:all .9s ease-in-out 
-}
+
  .footer-widget.widget_meta li>span,.footer-widget.widget_pages li>span,.footer-widget.widget_archive li>span,.footer-widget.widget_categories li>span,.footer-widget.widget_nav_menu li>span{
      width:auto;
      height:auto;
@@ -7679,7 +7680,7 @@
      list-style-type:none;
      display:inline-block;
      padding:3.5px 19px;
-     background:#f2f3fc;
+    
      border-radius:4px 
 }
  .blog-single .social-links li{
@@ -24197,9 +24198,7 @@
  .box-content {
      flex-grow: 1;
 }
- .icon__stling{
-     margin-bottom: 50px;
-}
+
  .scioal__media_icon{
      padding-bottom: 10px;
 }
