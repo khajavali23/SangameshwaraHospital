@@ -35,7 +35,6 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-       
         <div class="preloader">
             <div class="preloader-inner">
                 <img src="assets/img/logo.svg" alt="img" />
@@ -84,7 +83,7 @@
                             <div class="row align-items-center justify-content-center justify-content-sm-between">
                                 <div class="col-auto">
                                     <div class="header-logo">
-                                        <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment"/></a>
+                                        <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment" /></a>
                                     </div>
                                 </div>
                                 <div class="col-auto d-none d-sm-block">
@@ -127,7 +126,7 @@
                                 <div class="col-auto">
                                     <div class="header-wrapp">
                                         <div class="header-logo style1">
-                                            <a href="/"><img src="assets/img/logo.svg" alt="Medova "  class="logo__adjestment"/></a>
+                                            <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment btn__blac" /></a>
                                         </div>
                                         <nav class="main-menu style2 d-none d-lg-inline-block">
                                             <ul>
@@ -142,11 +141,11 @@
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </nav>
-                                        <a href="contact.html" class="th-btn style2">Contact Us</a>
+                                        <a href="contact.html" class="th-btn style2 display__none">Contact Us</a>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="header-button d-none d-lg-block">
+                                <div class="col-auto btn__blac">
+                                    <div class="header-button d-none d-lg-block btn__black">
                                         <a href="contact.html" class="th-btn" style="display: flex; align-items: center; gap: 8px;">
                                             <i class="fa-solid fa-phone" style="font-size: 18px;"></i>
                                             <span>Contact Us</span>
@@ -585,7 +584,6 @@
                                     <h3 class="box-title"><a href="/">Dr. Rajesh</a></h3>
                                     <span class="team-desig">Orthopaedic</span>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -597,7 +595,6 @@
                                     <h3 class="box-title"><a href="/">Dr. Rajesh</a></h3>
                                     <span class="team-desig">Neurology & Neurosurgery</span>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -609,7 +606,6 @@
                                     <h3 class="box-title"><a href="/">Dr. Rajesh</a></h3>
                                     <span class="team-desig">Neurology Specialist</span>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -621,7 +617,6 @@
                                     <h3 class="box-title"><a href="/">Dr. Rajesh</a></h3>
                                     <span class="team-desig">Infertility</span>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -685,7 +680,7 @@
                 </div>
             </div>
             <div class="shape-mockup" data-bottom="10%" data-right="25%"><img src="assets/img/shape/shape-1.png" alt="" /></div>
-            <div class="shape-mockup jump" data-bottom="20%" data-right="0%"><img src="assets/img/shape/element-2.png" alt=""  class="heartbeat-icon"/></div>
+            <div class="shape-mockup jump" data-bottom="20%" data-right="0%"><img src="assets/img/shape/element-2.png" alt="" class="heartbeat-icon" /></div>
         </div>
 
         <section class="overflow-hidden space overflow-hidden paddin-to-syling" id="testi-sec">
@@ -704,130 +699,154 @@
                             <div
                                 class="swiper th-slider"
                                 data-slider-options='{
-                                                "slidesPerView": 3,
-                                                "spaceBetween": 30,
-                                                "loop": true,
-                                                "breakpoints": {
-                                                    "0": { "slidesPerView": 1 },
-                                                    "768": { "slidesPerView": 2 },
-                                                    "992": { "slidesPerView": 3 }
-                                                }
-                                                }'
+              "slidesPerView": 3,
+              "spaceBetween": 10,
+              "loop": true,
+              "breakpoints": {
+                "0": { "slidesPerView": 1 },
+                "768": { "slidesPerView": 2 },
+                "992": { "slidesPerView": 3 }
+              }
+            }'
                             >
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 The professionalism and efficiency of the clinic made my visit smooth and stress-free. I highly recommend Dr. Jakob Smith and Medova to anyone in need of top-quality medical care.
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">Venkatesh</h3>
-                                                        <span class="box-desig">Heart Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Venkatesh</h3>
+                                                            <span class="box-desig">Heart Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 I was impressed by the attentive staff and the state-of-the-art facilities at the clinic. Dr. Smith's expertise and compassion truly set Medova apart in the healthcare field.
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">Hemalatha</h3>
-                                                        <span class="box-desig">Diet Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Hemalatha</h3>
+                                                            <span class="box-desig">Diet Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 The level of care and personalized treatment I received exceeded my expectations. Dr. Smith's dedication and the friendly atmosphere made the difference. Dr. Smith's expertise
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">Prabhakar</h3>
-                                                        <span class="box-desig">Diet Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Prabhakar</h3>
+                                                            <span class="box-desig">Diet Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 The professionalism and efficiency of the clinic made my visit smooth and stress-free. I highly recommend Dr. Jakob Smith and Medova to anyone in need of top-quality medical care.
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">kiran</h3>
-                                                        <span class="box-desig">Heart Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Kiran</h3>
+                                                            <span class="box-desig">Heart Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 I was impressed by the attentive staff and the state-of-the-art facilities at the clinic. Dr. Smith's expertise and compassion truly set Medova apart in the healthcare field.
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">Ravi</h3>
-                                                        <span class="box-desig">Diet Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Ravi</h3>
+                                                            <span class="box-desig">Diet Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide">
-                                        <div class="testi-card" data-bg-src="assets/img/bg/pattern.png">
+                                        <div class="testi-card" data-bg-src="">
                                             <div class="box-quote"><img src="assets/img/icon/quote.svg" alt="" /></div>
                                             <p class="box-text">
                                                 The level of care and personalized treatment I received exceeded my expectations. Dr. Smith's dedication and the friendly atmosphere made the difference. Dr. Smith's expertise
                                             </p>
-                                            <div class="box-wrapp">
-                                                <div class="box-profile">
-                                                    <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avater" /></div>
-                                                    <div class="box-info">
-                                                        <h3 class="box-title">Prasanna</h3>
-                                                        <span class="box-desig">Diet Patient</span>
+                                            <div class="fixed-author-wrapper">
+                                                <div class="box-wrapp">
+                                                    <div class="box-profile">
+                                                        <div class="box-author"><img src="assets/img/testimonial/user.png" alt="Avatar" /></div>
+                                                        <div class="box-info">
+                                                            <h3 class="box-title">Prasanna</h3>
+                                                            <span class="box-desig">Diet Patient</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="icon-box testimonial__icons">
-                                    <button data-slider-prev="#testiSlide1" class="slider-arrow default slider-prev"><i class="far fa-arrow-left"></i></button>
-                                    <button data-slider-next="#testiSlide1" class="slider-arrow default slider-next"><i class="far fa-arrow-right"></i></button>
+                                    <button data-slider-prev="#testiSlide1" class="slider-arrow default slider-prev">
+                                        <i class="far fa-arrow-left"></i>
+                                    </button>
+                                    <button data-slider-next="#testiSlide1" class="slider-arrow default slider-next">
+                                        <i class="far fa-arrow-right"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-left="0%"><img src="assets/img/shape/element-1.png" alt="" /></div>
+            <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-left="0%">
+                <img src="assets/img/shape/element-1.png" alt="" />
+            </div>
         </section>
 
         <section class="overflow-hidden space overflow-hidden paddin-to-syling" id="blog-sec">
@@ -911,7 +930,7 @@
                             <div class="widget footer-widget mb-0">
                                 <div class="th-widget-about">
                                     <div class="about-logo">
-                                        <a href="/"><img src="assets/img/logo.svg" alt="Sangameshwar Hospital" class="logo__adjestment"/></a>
+                                        <a href="/"><img src="assets/img/logo.svg" alt="Sangameshwar Hospital" class="logo__adjestment" /></a>
                                     </div>
                                     <p class="about-text">
                                         A 100-bed multispeciality hospital in Gadag, built on over five decades of trusted care. We are committed to accessible, quality medical services delivered with compassion and integrity.
