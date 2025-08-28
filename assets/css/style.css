@@ -6951,7 +6951,7 @@ background-color: #253C0D;
      background-repeat:repeat-x 
 }
  .footer-layout1 .heart-rate .fade-in{
-     background-color:#54914085;
+     background-color: #253c0d75;
      -webkit-animation:heartRateIn 9.5s linear infinite;
      animation:heartRateIn 9.5s linear infinite 
 }
@@ -19710,7 +19710,7 @@ background-color: #253C0D;
      position:relative;
      background-color:var(--white-color);
      border-radius:24px;
-     padding:43px 48px;
+     padding:40px 40px;
      text-align:center;
      overflow:hidden 
 }
@@ -24187,7 +24187,7 @@ background-color: #253C0D;
      color: white !important;
 }
  .service-card {
-     min-height: 430px;
+    
      display: flex;
      flex-direction: column;
 }
@@ -24227,28 +24227,28 @@ background-color: #253C0D;
      padding: 0;
      margin: 0;
 }
- .why-choose-list li {
-     background-color: #fff;
-     border-left: 5px solid #007b5e;
-     padding: 15px 20px;
-     margin-bottom: 15px;
-     font-size: 18px;
-     line-height: 1.6;
-     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-     transition: all 0.3s ease;
+.why-choose-list li {
+    /* background-color: #fff; */
+    border-left: 5px solid #007b5e;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
+    /* transition: all 0.3s ease; */
 }
  .why-choose-list li:hover {
-     background-color: #eefaf6;
+     background-color: #d9e7d5;
      border-left-color: #005d44;
 }
- .cta-section {
-     background-color: #54914038;
-     padding: 40px 20px;
-     border-radius: 12px;
-     box-shadow: 0 0 20px rgba(0, 70, 140, 0.08);
-     margin: 50px auto;
-     max-width: 900px;
-     text-align: center;
+.cta-section {
+    background-color: #54914038;
+    /* padding: 40px 20px; */
+    border-radius: 12px;
+    /* box-shadow: 0 0 20px rgba(0, 70, 140, 0.08); */
+    margin: 50px auto;
+    max-width: 100%;
+    text-align: center;
 }
  .cta-box {
      padding: 20px;
@@ -24349,4 +24349,7 @@ background-color: #253C0D;
     left: 20px !important;
     z-index: 10 !important;
 }
+
+
+
 

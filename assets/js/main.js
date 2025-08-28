@@ -638,3 +638,10 @@
             link.classList.add("active");
         }
     });
+
+
+
+$('[data-bg-src]').each(function () {
+  var bg = $(this).attr('data-bg-src');
+  $(this).css('background-image', 'url(' + bg + ')');
+});
