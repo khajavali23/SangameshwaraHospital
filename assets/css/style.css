@@ -226,7 +226,12 @@
      .icon__stling{
      margin-bottom: 50px;
 }
+.card__background{
+   padding: 25px 25px !important;
 }
+ }
+
+ 
  @media(max-width: 575px){
      .h1,h1{
          font-size:34px;
@@ -3061,7 +3066,7 @@ background-color: #253C0D;
      background-color:var(--theme-color) !important 
 }
  .bg-smoke{
-     background-color:var(--smoke-color) !important 
+     background-color:#4f6c3208;
 }
  .bg-smoke2{
      background-color:var(--smoke-color2) !important 
@@ -20636,7 +20641,7 @@ background-color: #253C0D;
      z-index:2 
 }
  .price-card .box-content{
-     background-color:#fff2f2;
+     background-color:#e7ece7;
      border-radius:16px 16px 0 0;
      padding:40px 
 }
@@ -20693,7 +20698,7 @@ background-color: #253C0D;
      visibility:hidden 
 }
  .price-card .th-btn{
-     background-color:#f2f3fc;
+    
      border:none 
 }
  .price-card.active .offer-tag{
@@ -21176,6 +21181,7 @@ background-color: #253C0D;
      text-align: start;
      padding: 30px 90px 30px 30px;
 }
+
  @media(max-width: 575px){
      .gallery-card.style3 .box-content{
          padding:25px 80px 25px 25px;
@@ -24334,21 +24340,160 @@ background-color: #253C0D;
        
 }
 
-
 .margin_style{
     margin-top: 20px;
 }
 
-.testi-card {
-    position: relative !important;
+
+.card__background{
+       background: #538f3f24;
+    border-radius: 16px;
+    padding: 20px 50px;
+}
+.pera__government{
+    font-size: 20px !important;
+}
+.custom-section-title {
+    font-weight: 600;
+    color: #14532d;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
-.fixed-author-wrapper .box-wrapp {
-    position: absolute !important;
-    bottom: 20px !important;
-    left: 20px !important;
-    z-index: 10 !important;
+.custom-list-style {
+    list-style: none;
+    padding-left: 0;
 }
+
+.custom-list-item {
+    background-color: #f3fdf7;
+    border-left: 4px solid #73BF8F;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: #1e1e1e;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.custom-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #14532d;
+}
+
+.custom-description {
+    color: #555;
+    font-size: 15px;
+}
+
+.custom-subtitle {
+    font-size: 17px;
+    color: #134e4a;
+    font-weight: 600;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.custom-list-item {
+    background-color: #f3fdf7;
+    padding: 12px 15px;
+    border-left: 4px solid #73BF8F;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #1e1e1e;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.custom-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #14532d;
+}
+
+.custom-description {
+    color: #555;
+    font-size: 15px;
+}
+
+.custom-subtitle {
+    font-size: 17px;
+    color: #134e4a;
+    font-weight: 600;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.custom-list-item {
+    background-color: #f3fdf7;
+    padding: 12px 15px;
+    border-left: 4px solid #73BF8F;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #1e1e1e;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+
+.gallery-card.style3 .box-content.clean-layout {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 3;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clean-layout .box-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.clean-layout .box-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.clean-layout .icon-btn {
+    background-color: #4c7c2c;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.clean-layout .icon-btn:hover {
+    background-color: #355e20;
+}
+
+@media (max-width: 767px) {
+    .gallery-card.style3 .box-content.clean-layout {
+        padding: 15px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .clean-layout .box-title {
+        font-size: 15px;
+    }
+}
+
 
 
 
