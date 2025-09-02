@@ -124,41 +124,39 @@ sangameshwarhospital2021@gmail.com"
                     </div>
                     <div class="sticky-wrapper">
                         <div class="container">
-                            <div class="row align-items-center justify-content-between">
+                            <div class="row align-items-center justify-content-between nav__styling_items">
                                 <div class="col-auto">
                                     <div class="header-wrapp">
                                         <div class="header-logo style1">
-                                            <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment" /></a>
+                                            <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment btn__blac" /></a>
                                         </div>
                                         <nav class="main-menu style2 d-none d-lg-inline-block">
                                             <ul>
-                                                <li class="menu-item-has-children">
-                                                    <a href="/">Home</a>
-                                                </li>
+                                                <li><a href="/">Home</a></li>
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="Specialties.html">Specialities</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="facilities.html">Facilities</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="doctors.html">Doctors</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="blog.html">Blog</a>
-                                                </li>
-
-                                                <li><a href="health-checkups.html">Health Checkups</a></li>
-                                                <li><a href="government-schemes.html">Government Schemes</a></li>
+                                                <li><a href="Specialties.html">Specialties</a></li>
+                                                <li><a href="facilities.html">Facilities</a></li>
+                                                <li><a href="doctors.html">Doctors</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
+
+                                                <!-- Dropdown Starts -->
+                                                <li class="dropdown">
+                                                    <a href="#">More <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="health-checkups.html">Health Checkups</a></li>
+                                                        <li><a href="government-schemes.html">Government Schemes</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Dropdown Ends -->
                                             </ul>
                                         </nav>
-                                        <a href="contact.html" class="th-btn style2">Contact us</a>
+
+                                        <a href="contact.html" class="th-btn style2 display__none">Contact Us</a>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="header-button d-none d-lg-block">
+                                <div class="col-auto btn__blac">
+                                    <div class="header-button d-none d-lg-block btn__black">
                                         <a href="contact.html" class="th-btn" style="display: flex; align-items: center; gap: 8px;">
                                             <i class="fa-solid fa-phone" style="font-size: 18px;"></i>
                                             <span>Contact Us</span>
@@ -173,7 +171,7 @@ sangameshwarhospital2021@gmail.com"
                 </div>
             </div>
         </header>
-        <div class="breadcumb-wrapper" style="background-image: url('assets/img/bg/GovernmentSchemesbg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 300px;">
+        <div class="breadcumb-wrapper" style="background-image: url('assets/img/bg/GovernmentSchemesbg.jpg'); background-size: cover; background-position: right; background-repeat: no-repeat; height: 300px;">
             <div class="container">
                 <div class="breadcumb-content">
                     <h1 class="breadcumb-title">Government Schemes</h1>
@@ -200,126 +198,128 @@ sangameshwarhospital2021@gmail.com"
                             Currently, Sangameshwar Hospital is empanelled under two major schemes:
                         </p>
                         <div class="row g-4">
-                          <div class="col-md-6 mb-4">
-    <div class="card h-100 border-0">
-        <img src="assets/img/widget/govermentschem1.jpg" class="card-img-top" alt="Yeshasvini Health Scheme" style="height: 200px; object-fit: cover;" />
-        <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Yeshasvini Health Insurance Scheme in Gadag</h4>
-            <p class="card-text text-muted">
-                The Yeshasvini Co-operative Farmers Health Care Scheme is one of Karnataka’s flagship healthcare initiatives, designed to provide affordable treatment to members of co-operative societies.
-            </p>
-            <!-- Button trigger modal -->
-            <div class="d-flex flex-wrap gap-2 mt-auto">
-                <button class="th-btn black-border" data-bs-toggle="modal" data-bs-target="#yeshasviniModal">
-                    View Details <i class="fa-regular fa-arrow-down ms-2"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="col-lg-6 col-xl-6">
+                                <div class="th-blog blog-single has-post-thumbnail single-grid">
+                                    <div class="blog-img global-img">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#yeshasviniModal">
+                                            <img src="assets/img/widget/govermentschem1.jpg" alt="Yeshasvini Health Scheme" />
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h2 class="box-title">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#yeshasviniModal">
+                                                Yeshasvini Health Insurance Scheme in Gadag
+                                            </a>
+                                        </h2>
+                                        <p class="card-text text-muted">
+                                            The Yeshasvini Co-operative Farmers Health Care Scheme is one of Karnataka’s flagship healthcare initiatives, designed to provide affordable treatment to members of co-operative societies.
+                                        </p>
+                                        <a href="#" class="line-btn" data-bs-toggle="modal" data-bs-target="#yeshasviniModal"> View Details <i class="fa-light fa-arrow-right-long ms-2"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
 
-<!-- Modal -->
-<div class="modal fade" id="yeshasviniModal" tabindex="-1" aria-labelledby="yeshasviniModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="yeshasviniModalLabel">Yeshasvini Health Insurance Scheme</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
+                            <!-- Modal -->
+                            <div class="modal fade" id="yeshasviniModal" tabindex="-1" aria-labelledby="yeshasviniModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="yeshasviniModalLabel">Yeshasvini Health Insurance Scheme</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="custom-section-title">Key Benefits for Patients</h6>
+                                            <ul class="custom-list-style">
+                                                <li class="custom-list-item">Coverage for more than 800 surgical procedures at network hospitals.</li>
+                                                <li class="custom-list-item">Substantial reduction in treatment and surgical costs.</li>
+                                                <li class="custom-list-item">Access to multispeciality care, including general surgery, orthopaedics, cardiology, and more.</li>
+                                            </ul>
 
-                <h6 class="custom-section-title">Key Benefits for Patients</h6>
-                <ul class="custom-list-style">
-                    <li class="custom-list-item">Coverage for more than 800 surgical procedures at network hospitals.</li>
-                    <li class="custom-list-item">Substantial reduction in treatment and surgical costs.</li>
-                    <li class="custom-list-item">Access to multispeciality care, including general surgery, orthopaedics, cardiology, and more.</li>
-                </ul>
+                                            <h6 class="custom-section-title mt-3">Eligibility</h6>
+                                            <ul class="custom-list-style">
+                                                <li class="custom-list-item">Must be a member of a co-operative society in Karnataka for at least 3 months.</li>
+                                                <li class="custom-list-item">Applicable to both rural and urban co-operative society members.</li>
+                                            </ul>
 
-                <h6 class="custom-section-title mt-3">Eligibility</h6>
-                <ul class="custom-list-style">
-                    <li class="custom-list-item">Must be a member of a co-operative society in Karnataka for at least 3 months.</li>
-                    <li class="custom-list-item">Applicable to both rural and urban co-operative society members.</li>
-                </ul>
+                                            <h6 class="custom-section-title mt-3">Required Documents</h6>
+                                            <ul class="custom-list-style">
+                                                <li class="custom-list-item">Yeshasvini Health Card / Membership ID.</li>
+                                                <li class="custom-list-item">Aadhaar Card.</li>
+                                                <li class="custom-list-item">Proof of co-operative society membership.</li>
+                                            </ul>
 
-                <h6 class="custom-section-title mt-3">Required Documents</h6>
-                <ul class="custom-list-style">
-                    <li class="custom-list-item">Yeshasvini Health Card / Membership ID.</li>
-                    <li class="custom-list-item">Aadhaar Card.</li>
-                    <li class="custom-list-item">Proof of co-operative society membership.</li>
-                </ul>
+                                            <h6 class="custom-section-title mt-3">How Sangameshwar Hospital Helps</h6>
+                                            <p class="text-muted">
+                                                Our hospital’s reception desk guides patients through every step from verifying eligibility to processing claims. We ensure a smooth, transparent process so patients can focus on recovery
+                                                while we take care of the paperwork.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <h6 class="custom-section-title mt-3">How Sangameshwar Hospital Helps</h6>
-                <p class="text-muted">
-                    Our hospital’s reception desk guides patients through every step from verifying eligibility to processing claims. We ensure a smooth, transparent process so patients can focus on recovery while we take care of the paperwork.
-                </p>
+                            <div class="col-lg-6 col-xl-6">
+                                <div class="th-blog blog-single has-post-thumbnail single-grid">
+                                    <div class="blog-img global-img">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#abarkModal">
+                                            <img src="assets/img/widget/govermentschem2.jpg" alt="AB-ARK Health Scheme" />
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h2 class="box-title">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#abarkModal">
+                                                Ayushman Bharat Arogya Karnataka (AB-ARK) Scheme at Sangameshwar Hospital
+                                            </a>
+                                        </h2>
+                                        <p class="card-text text-muted">
+                                            The AB-ARK scheme combines the benefits of the central government’s Ayushman Bharat Yojana with the Karnataka government’s Arogya Karnataka scheme. It aims to provide cashless healthcare to
+                                            economically weaker sections of society.
+                                        </p>
+                                        <a href="#" class="line-btn" data-bs-toggle="modal" data-bs-target="#abarkModal"> View Details <i class="fa-light fa-arrow-right-long ms-2"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
 
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="abarkModal" tabindex="-1" aria-labelledby="abarkModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="abarkModalLabel">Ayushman Bharat Arogya Karnataka (AB-ARK)</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="custom-subtitle">Key Benefits for Patients</h6>
+                                            <ul class="custom-list">
+                                                <li class="custom-list-item">Coverage up to ₹5 lakh per family per year for secondary and tertiary care.</li>
+                                                <li class="custom-list-item">Wide range of treatments across specialities, including emergency care, surgeries, and chronic disease management.</li>
+                                                <li class="custom-list-item">Cashless treatment at Sangameshwar Hospital and other empanelled centres.</li>
+                                            </ul>
 
-                            
-                          <div class="col-md-6 mb-4">
-    <div class="card h-100 shadow-sm border-0">
-        <img src="assets/img/widget/govermentschem2.jpg" class="card-img-top" alt="AB-ARK Health Scheme" style="height: 200px; object-fit: cover;" />
-        <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Ayushman Bharat Arogya Karnataka (AB-ARK) Scheme at Sangameshwar Hospital</h4>
-            <p class="card-text text-muted">
-                The AB-ARK scheme combines the benefits of the central government’s Ayushman Bharat Yojana with the Karnataka government’s Arogya Karnataka scheme. It aims to provide cashless healthcare to economically weaker sections of society.
-            </p>
-            <!-- Button trigger modal -->
-            <div class="d-flex flex-wrap gap-2 mt-auto">
-                <button class="th-btn black-border" data-bs-toggle="modal" data-bs-target="#abarkModal">
-                    View Details <i class="fa-regular fa-arrow-down ms-2"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+                                            <h6 class="custom-subtitle mt-3">Eligibility</h6>
+                                            <ul class="custom-list">
+                                                <li class="custom-list-item">Families listed under the Socio-Economic Caste Census (SECC) database.</li>
+                                                <li class="custom-list-item">Priority household cardholders (BPL, Antyodaya Anna Yojana).</li>
+                                                <li class="custom-list-item">Certain categories of APL families as notified by the Karnataka government.</li>
+                                            </ul>
 
-<!-- Modal -->
-<div class="modal fade" id="abarkModal" tabindex="-1" aria-labelledby="abarkModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="abarkModalLabel">Ayushman Bharat Arogya Karnataka (AB-ARK)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
+                                            <h6 class="custom-subtitle mt-3">Required Documents</h6>
+                                            <ul class="custom-list">
+                                                <li class="custom-list-item">Aadhaar Card of all family members.</li>
+                                                <li class="custom-list-item">Ration Card (BPL/APL as applicable).</li>
+                                                <li class="custom-list-item">Ayushman Bharat/AB-ARK Health Card (if already issued).</li>
+                                            </ul>
 
-                <h6 class="custom-subtitle">Key Benefits for Patients</h6>
-                <ul class="custom-list">
-                    <li class="custom-list-item">Coverage up to ₹5 lakh per family per year for secondary and tertiary care.</li>
-                    <li class="custom-list-item">Wide range of treatments across specialities, including emergency care, surgeries, and chronic disease management.</li>
-                    <li class="custom-list-item">Cashless treatment at Sangameshwar Hospital and other empanelled centres.</li>
-                </ul>
-
-                <h6 class="custom-subtitle mt-3">Eligibility</h6>
-                <ul class="custom-list">
-                    <li class="custom-list-item">Families listed under the Socio-Economic Caste Census (SECC) database.</li>
-                    <li class="custom-list-item">Priority household cardholders (BPL, Antyodaya Anna Yojana).</li>
-                    <li class="custom-list-item">Certain categories of APL families as notified by the Karnataka government.</li>
-                </ul>
-
-                <h6 class="custom-subtitle mt-3">Required Documents</h6>
-                <ul class="custom-list">
-                    <li class="custom-list-item">Aadhaar Card of all family members.</li>
-                    <li class="custom-list-item">Ration Card (BPL/APL as applicable).</li>
-                    <li class="custom-list-item">Ayushman Bharat/AB-ARK Health Card (if already issued).</li>
-                </ul>
-
-                <h6 class="custom-subtitle mt-3">How Sangameshwar Hospital Helps</h6>
-                <ul class="custom-list">
-                    <li class="custom-list-item">Document verification and scheme registration.</li>
-                    <li class="custom-list-item">Cashless admission and discharge process.</li>
-                    <li class="custom-list-item">Liaison with government portals to ensure benefits are processed without delay.</li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</div>
-
+                                            <h6 class="custom-subtitle mt-3">How Sangameshwar Hospital Helps</h6>
+                                            <ul class="custom-list">
+                                                <li class="custom-list-item">Document verification and scheme registration.</li>
+                                                <li class="custom-list-item">Cashless admission and discharge process.</li>
+                                                <li class="custom-list-item">Liaison with government portals to ensure benefits are processed without delay.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <p class="fs-5 text-muted mb-5">
                             With us, patients can receive timely and affordable care without worrying about financial strain.
@@ -405,7 +405,7 @@ sangameshwarhospital2021@gmail.com"
                                         <li><a href="Specialties/Orthopaedicservice-details.html">Orthopaedics</a></li>
                                         <li><a href="Specialties/GeneralSurgery-details.html">General Surgery</a></li>
                                         <li><a href="Specialties/ENT-details.html">ENT (Ear, Nose & Throat)</a></li>
-                                       <li><a href="Specialties/Infertility-details.html">Infertility</a></li>
+                                        <li><a href="Specialties/Infertility-details.html">Infertility</a></li>
                                         <li><a href="Specialties/Urology-details.html">Urology</a></li>
                                     </ul>
                                 </div>
@@ -456,7 +456,6 @@ sangameshwarhospital2021@gmail.com"
         <script src="assets/js/app.min.js"></script>
         <script src="assets/js/main.js"></script>
         <!-- Bootstrap JS (required for modal to work) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

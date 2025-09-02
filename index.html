@@ -122,25 +122,36 @@
                     </div>
                     <div class="sticky-wrapper">
                         <div class="container">
-                            <div class="row align-items-center justify-content-between">
+                            <div class="row align-items-center justify-content-between nav__styling_items">
                                 <div class="col-auto">
                                     <div class="header-wrapp">
                                         <div class="header-logo style1">
                                             <a href="/"><img src="assets/img/logo.svg" alt="Medova " class="logo__adjestment btn__blac" /></a>
                                         </div>
-                                        <nav class="main-menu style2 d-none d-lg-inline-block">
-                                            <ul>
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="Specialties.html">Specialties</a></li>
-                                                <li><a href="facilities.html">Facilities</a></li>
-                                                <li><a href="doctors.html">Doctors</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="health-checkups.html">Health Checkups</a></li>
-                                                <li><a href="government-schemes.html">Government Schemes</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
+                                      <nav class="main-menu style2 d-none d-lg-inline-block">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Specialties.html">Specialties</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+         <li><a href="contact.html">Contact</a></li>
+
+        <!-- Dropdown Starts -->
+        <li class="dropdown">
+            <a href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="health-checkups.html">Health Checkups</a></li>
+                <li><a href="government-schemes.html">Government Schemes</a></li>
+            </ul>
+        </li>
+        <!-- Dropdown Ends -->
+
+       
+    </ul>
+</nav>
+
                                         <a href="contact.html" class="th-btn style2 display__none">Contact Us</a>
                                     </div>
                                 </div>
@@ -295,15 +306,16 @@
                                 </div>
 
                                 <!-- Right Side Image -->
-                                <div class="col-xxl-4">
-                                    <div class="img-box2">
-                                        <div class="img-box-wrapp">
-                                            <div class="img2 reveal">
-                                                <img src="assets/img/normal/abotpage__about.jpg" alt="About" class="img-box1" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               <div class="col-xxl-4 hide-on-mobile">
+    <div class="img-box2">
+        <div class="img-box-wrapp">
+            <div class="img2 reveal">
+                <img src="assets/img/normal/abotpage__about.jpg" alt="About" class="img-box1" />
+            </div>
+        </div>
+    </div>
+</div>
+
                             </div>
                             <!-- about-wrapper end -->
                         </div>
@@ -565,52 +577,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="row gy-3">
-                    <div class="col-md-6 col-xl-3">
-                        <div class="th-team team-card">
-                            <div class="box-img"><img src="assets/img/team/doctor.jpg" alt="Team" /></div>
-                            <div class="box-content">
-                                <div>
-                                    <h3 class="box-title"><a href="/">Dr Prashant K Dhannur</a></h3>
-                                    <span class="team-desig">Consultant- Urology</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="th-team team-card">
-                            <div class="box-img"><img src="assets/img/team/girldoctor.png" alt="Team" /></div>
-                            <div class="box-content">
-                                <div>
-                                    <h3 class="box-title"><a href="/">Dr Annapurna Dhannur</a></h3>
-                                    <span class="team-desig">Consultant- Obstetrics & Gyanecology</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="th-team team-card">
-                            <div class="box-img"><img src="assets/img/team/doctor.jpg" alt="Team" /></div>
-                            <div class="box-content">
-                                <div>
-                                    <h3 class="box-title"><a href="/">Dr Prashant K Dhannur</a></h3>
-                                    <span class="team-desig">Consultant- Urology</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="th-team team-card">
-                            <div class="box-img"><img src="assets/img/team/girldoctor.png" alt="Team" /></div>
-                            <div class="box-content">
-                                <div>
-                                    <h3 class="box-title"><a href="/">Dr Annapurna Dhannur</a></h3>
-                                    <span class="team-desig">Consultant- Obstetrics & Gyanecology</span>
-                                </div>
-                            </div>
-                        </div>
+              <div class="slider-area mt-40">
+    <div
+        class="swiper th-slider has-shadow"
+        id="doctorSlider"
+        data-slider-options='{
+            "loop": true,
+            "spaceBetween": 30,
+            "breakpoints": {
+                "0": { "slidesPerView": 1 },
+                "576": { "slidesPerView": 1 },
+                "768": { "slidesPerView": 2 },
+                "992": { "slidesPerView": 3 },
+                "1200": { "slidesPerView": 4 }
+            }
+        }'
+    >
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="th-team team-card">
+                    <div class="box-img"><img src="assets/img/team/doctor.jpg" alt="Team" /></div>
+                    <div class="box-content">
+                        <h3 class="box-title"><a href="/">Dr Prashant K Dhannur</a></h3>
+                        <span class="team-desig">Consultant - Urology</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="th-team team-card">
+                    <div class="box-img"><img src="assets/img/team/girldoctor.png" alt="Team" /></div>
+                    <div class="box-content">
+                        <h3 class="box-title"><a href="/">Dr Annapurna Dhannur</a></h3>
+                        <span class="team-desig">Consultant - Obstetrics & Gynaecology</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="th-team team-card">
+                    <div class="box-img"><img src="assets/img/team/doctor.jpg" alt="Team" /></div>
+                    <div class="box-content">
+                        <h3 class="box-title"><a href="/">Dr Prashant K Dhannur</a></h3>
+                        <span class="team-desig">Consultant - Urology</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="th-team team-card">
+                    <div class="box-img"><img src="assets/img/team/girldoctor.png" alt="Team" /></div>
+                    <div class="box-content">
+                        <h3 class="box-title"><a href="/">Dr Annapurna Dhannur</a></h3>
+                        <span class="team-desig">Consultant - Obstetrics & Gynaecology</span>
+                    </div>
+                </div>
+            </div>
+               <div class="swiper-slide">
+                <div class="th-team team-card">
+                    <div class="box-img"><img src="assets/img/team/doctor.jpg" alt="Team" /></div>
+                    <div class="box-content">
+                        <h3 class="box-title"><a href="/">Dr Prashant K Dhannur</a></h3>
+                        <span class="team-desig">Consultant - Urology</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button data-slider-prev="#doctorSlider" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
+    <button data-slider-next="#doctorSlider" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
+</div>
+
             </div>
         </section>
         <div class="choose-area position-relative overflow-hidden space paddin-to-syling">
@@ -619,7 +664,11 @@
                     <div class="col-xxl-5">
                         <div class="title-area pe-xl-5 text-lg-start text-center">
                             <span class="sub-title sub-title2 text-anime-style-1">Why Choose Us</span>
-                            <h2 class="sec-title text-anime-style-3">Rooted in Legacy, <span class="fw-normal d-block">Driven by Care</span></h2>
+                          <h2 class="sec-title text-anime-style-3 text-md-start text-center">
+  Rooted in Legacy,  
+  <span class="fw-normal d-block">Driven by Care</span>
+</h2>
+
                             <p class="fs-18 pe-xl-5 wow fadeInLeft">Because your health deserves the best- delivered with expertise, empathy, and trust.</p>
                         </div>
                         <div class="choose-item-wrap">
@@ -662,9 +711,21 @@
                     </div>
                     <div class="col-xxl-7">
                         <div class="choose-img-box">
-                            <div class="img1 wow fadeInLeft global-img" data-wow-delay=".3s"><img src="assets/img/normal/whychose_section1.jpg" alt="" /></div>
-                            <div class="img2 wow fadeInRight global-img" data-wow-delay=".6s"><img src="assets/img/normal/about_1_2.jpg" alt="" /></div>
-                            <div class="img3 wow fadeInUp global-img" data-wow-delay=".9s"><img src="assets/img/normal/about_1_1.jpg" alt="" /></div>
+                            <!-- Hide on mobile -->
+<div class="img1 wow fadeInLeft global-img d-none d-sm-block" data-wow-delay=".3s">
+    <img src="assets/img/normal/whychose_section1.jpg" alt="" />
+</div>
+
+<!-- Always show (even on mobile) -->
+<div class="img2 wow fadeInRight global-img" data-wow-delay=".6s">
+    <img src="assets/img/normal/about_1_2.jpg" alt="" />
+</div>
+
+<!-- Hide on mobile -->
+<div class="img3 wow fadeInUp global-img d-none d-sm-block" data-wow-delay=".9s">
+    <img src="assets/img/normal/about_1_1.jpg" alt="" />
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -672,6 +733,8 @@
             <div class="shape-mockup" data-bottom="10%" data-right="25%"><img src="assets/img/shape/shape-1.png" alt="" /></div>
             <div class="shape-mockup jump" data-bottom="20%" data-right="0%"><img src="assets/img/shape/element-2.png" alt="" class="heartbeat-icon" /></div>
         </div>
+
+
 
         <section class="overflow-hidden space overflow-hidden paddin-to-syling" id="testi-sec">
             <div class="container">
