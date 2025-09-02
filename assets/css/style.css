@@ -14148,7 +14148,8 @@ background-color: #253C0D;
     }
 }
  .img-box4 .img1{
-     border-radius:24px 
+     border-radius:24px;
+     width: 100%; 
 }
  .img-box4 .img1 img{
      border-radius:24px 
@@ -22298,7 +22299,8 @@ background-color: #253C0D;
  .feature-card{
      background-color:#4f6c3221;
      border-radius:16px;
-     padding:40px 
+     padding:40px;
+     height: 150px; 
 }
  @media(max-width: 1399px){
      .feature-card{
