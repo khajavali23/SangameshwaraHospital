@@ -5845,7 +5845,7 @@ background-color: #253C0D;
  .main-menu ul.sub-menu,.main-menu ul.mega-menu{
      position:absolute;
      text-align:left;
-     top:150%;
+     top:100%;
      left:0;
      background-color:var(--white-color);
      visibility:hidden;
@@ -24536,7 +24536,7 @@ background-color: #253C0D;
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 150%;
+    top: 100%;
     left: 0;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
