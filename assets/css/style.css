@@ -8489,7 +8489,7 @@ background-color: #253C0D;
      content:"";
      position:absolute;
      inset:0;
-     background-color: rgba(0, 0, 0, 0.6);
+     background-color: rgb(0 0 0 / 77%);
    
 }
  .hero-1 .scroll-down{
@@ -13899,7 +13899,7 @@ background-color: #253C0D;
      display:-webkit-box;
      display:-ms-flexbox;
      display:flex;
-     gap:56px 
+     gap:10px 
 }
  @media(max-width: 991px){
      .img-box1 .about-wrapper{
@@ -13911,10 +13911,11 @@ background-color: #253C0D;
     }
 }
  .img-box1 .img1{
-     position:relative;
-     min-width:387px;
-     border-radius:16px;
-     z-index:2 
+        position: relative;
+    min-width: 499px;
+    border-radius: 16px;
+    z-index: 2;
+    height: 385px;
 }
  @media(max-width: 767px){
      .img-box1 .img1{
@@ -24555,7 +24556,7 @@ background-color: #253C0D;
     background-color: #f8f8f8;
 }
 .nav__styling_items{
- padding: 20px 0px 20px 0px;
+ padding: 15px 0px 15px 0px;
 }
 .cta-btn {
     display: flex;
@@ -24568,6 +24569,207 @@ background-color: #253C0D;
 .cta-btn i {
     font-size: 18px;
 }
+
+.price-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.price-card .box-content {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.price-card .checkup-icon {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.price-card .box-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  
+}
+
+.price-card .box-price {
+    font-size: 20px;
+    font-weight: 600;
+  
+    margin-bottom: 10px;
+}
+
+.price-card .duration {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+}
+
+.price-card .box-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.available-list {
+    padding-top: 5px;
+}
+
+.available-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.available-list ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+ 
+    font-size: 16px;
+  
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 10%;
+    z-index: 1000;
+    left: 95.5%;
+}
+
+.whatsapp-float a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float a:hover {
+    background-color: #20b354;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    font-size: 30px;
+}
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        bottom: 92px;
+        right: 15px;
+        left: 77% !important;
+    }
+    .whatsapp-float a {
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-float i {
+        font-size: 24px;
+    }
+}
+
+
+.vision-mission-section {
+      padding: 80px 0;
+    /* background: linear-gradient(135deg, #f5f7fa 0%, #e0e7ff 100%); */
+    background: #5491401c;
+}
+
+
+
+.vision-mission-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.vision-mission-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.card-content {
+    background: #ffffff;
+    border-radius: 16px;
+   
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card-content:hover {
+    transform: translateY(-5px);
+   
+}
+
+.card-icon {
+    margin-bottom: 20px;
+}
+
+.card-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.card-title {
+ 
+    font-size: 28px;
+    font-weight: 700;
+   
+    margin-bottom: 15px;
+}
+
+.card-text {
+  
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+@media (max-width: 768px) {
+    .vision-mission-section {
+        padding: 40px 0;
+    }
+
+    .vision-mission-card {
+        min-width: 100%;
+    }
+    .uraoloy__pre{
+        margin-left: 0px !important ;
+}
+}
+
+.uraoloy__pre{
+        margin-left: 70px ;
+}
+
 
 
 
