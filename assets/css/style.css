@@ -24806,7 +24806,32 @@ background-color: #253C0D;
 .arrow_styling{
     padding-left: 4px;
 }
+.box-img {
+    position: relative;
+}
 
+.dept-badge {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 80%;
+    text-align: center;
+
+    background: #549140; /* light water color */
+    color: white;
+
+    padding: 8px 0;
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+
+   backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid #549140;
+}
 
 
 
