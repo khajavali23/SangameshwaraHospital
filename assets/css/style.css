@@ -7655,7 +7655,7 @@ background-color: #253C0D;
      margin-right:8px 
 }
  .blog-single.single-grid .box-title{
-     max-width:462px;
+     
      border-bottom:1px solid rgba(92,95,113,.2);
      margin-bottom:32px;
      padding-bottom:25px 
@@ -14808,27 +14808,113 @@ background-color: #253C0D;
      background-repeat:no-repeat;
      z-index:-1 
 }
- .team-card .box-content{
-     position:relative;
-     display:-webkit-box;
-     display:-ms-flexbox;
-     display:flex;
-     -webkit-box-pack:justify;
-     -ms-flex-pack:justify;
-     justify-content:space-between;
-     -webkit-box-align:center;
-     -ms-flex-align:center;
+/* CARD FIX */
+.team-card .box-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* better than space-evenly */
     
-     padding:40px 32px 32px 32px;
-     border:1px solid #dedfe3;
-     border-top-color:rgba(0,0,0,0);
-     border-radius:0 0 24px 24px;
-     z-index:3;
-     -webkit-transition:all .4s ease-in-out;
-     transition:all .4s ease-in-out;
-     display: flex;
-     flex-direction: column;
+    padding: 40px 32px 32px 32px;
+    border: 1px solid #dedfe3;
+    border-top-color: transparent;
+    border-radius: 0 0 24px 24px;
+    z-index: 3;
+    transition: all .4s ease-in-out;
+
+    height: 100%;
+    min-height: 200px; /* desktop default */
 }
+
+/* TEXT FIX */
+.team-card .box-title {
+    min-height: 50px;
+}
+
+.team-card .box-title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.team-card .team-desig {
+    min-height: 45px;
+    display: block;
+} 
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+    .team-card .box-content {
+        padding: 30px 20px;
+        min-height: 180px;
+    }
+
+    .team-card .box-title {
+        font-size: 16px;
+        min-height: 45px;
+    }
+
+    .team-card .team-desig {
+        font-size: 14px;
+        min-height: 40px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .team-card .box-content {
+        padding: 25px 18px;
+        min-height: 160px;
+    }
+
+    .team-card .box-title {
+        font-size: 15px;
+        min-height: 40px;
+    }
+
+    .team-card .team-desig {
+        font-size: 13px;
+        min-height: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .team-card .box-content {
+        padding: 20px 15px;
+        min-height: 140px; /* smaller for mobile */
+    }
+
+    .team-card .box-title {
+        font-size: 14px;
+        min-height: 36px;
+    }
+
+    .team-card .team-desig {
+        font-size: 12px;
+        min-height: 30px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+    .team-card .box-content {
+        padding: 15px 12px;
+        min-height: 130px;
+    }
+
+    .team-card .box-title {
+        font-size: 13px;
+        min-height: 32px;
+    }
+
+    .team-card .team-desig {
+        font-size: 11px;
+        min-height: 28px;
+    }
+}
+
  @media(max-width: 1500px){
      .team-card .box-content{
          padding:30px 25px 
@@ -22301,7 +22387,7 @@ background-color: #253C0D;
      background-color:#4f6c3221;
      border-radius:16px;
      padding:40px;
-     height: 150px; 
+    
 }
  @media(max-width: 1399px){
      .feature-card{
@@ -24648,17 +24734,18 @@ background-color: #253C0D;
 }
 .whatsapp-float {
     position: fixed;
-    bottom: 10%;
+   
     z-index: 1000;
-    left: 95.9%;
+    right: 30px;
+    bottom: 89px;
 }
 
 .whatsapp-float a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     background-color: #25D366;
     color: #fff;
     border-radius: 50%;
@@ -24833,8 +24920,41 @@ background-color: #253C0D;
     border: 1px solid #549140;
 }
 
+/* Equal height fix */
+.feature-card-height {
+    height: 100%;
+    min-height: 200px; /* desktop default */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Large screens */
+@media (max-width: 1200px) {
+    .feature-card-height {
+        min-height: 200px;
+    }
+}
 
+/* Tablets */
+@media (max-width: 768px) {
+    .feature-card-height {
+        min-height: 180px;
+    }
+}
 
+/* Mobile */
+@media (max-width: 576px) {
+    .feature-card-height {
+        min-height: 160px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .feature-card-height {
+        min-height: 150px;
+    }
+}
 
 
 
